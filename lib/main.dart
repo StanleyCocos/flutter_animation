@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animation/explicit/explicit_page.dart';
 
 import 'implicit/implicit_page.dart';
+import 'transitions/transitions_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -66,6 +67,12 @@ class _MyHomePageState extends State<MyHomePage> {
     switch(index){
       case 0:
         page = const ImplicitPage();
+        break;
+      case 1:
+        page = const ExplicitPage();
+        break;
+      case 2:
+        page = const TransitionsPage();
         break;
       default:
         page = const ExplicitPage();
