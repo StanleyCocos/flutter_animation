@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation/explicit/explicit_page.dart';
 
 import 'implicit/implicit_page.dart';
 
@@ -67,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
         page = const ImplicitPage();
         break;
       default:
-        page = Container();
+        page = const ExplicitPage();
         break;
     }
     return MaterialPageRoute(builder: (_) => page);
